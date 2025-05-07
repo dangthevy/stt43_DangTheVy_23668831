@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Coming Soon - Mechanics Zyx</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../font/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/css-html/home.css" />
+    <style>
+      .coming-soon {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 50px 0;
+        background-color: #f8f9fa;
+      }
+      .coming-soon-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .coming-soon h1 {
+        font-size: 3.5rem;
+        color: #dc3545;
+        margin-bottom: 20px;
+        font-weight: 700;
+      }
+      .coming-soon p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #343a40;
+      }
+      .countdown {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 40px;
+      }
+      .countdown-item {
+        background: #fff;
+        border-radius: 5px;
+        padding: 15px 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        min-width: 100px;
+      }
+      .countdown-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #dc3545;
+      }
+      .countdown-label {
+        font-size: 0.9rem;
+        color: #6c757d;
+        text-transform: uppercase;
+      }
+      .newsletter-form {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      .social-icons {
+        margin-top: 30px;
+      }
+      .social-icons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #dc3545;
+        color: white;
+        margin: 0 10px;
+        font-size: 1.2rem;
+        transition: all 0.3s;
+      }
+      .social-icons a:hover {
+        transform: translateY(-5px);
+        background: #c82333;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-sm-2">
+            <img
+              src="../img/logo.jpg"
+              class="img-fluid"
+              alt="Logo"
+              width="200px"
+            />
+          </div>
+
+          <div class="col-sm-6 offset-sm-4">
+            <ul class="row list-unstyled m-0 justify-content-end">
+              <li class="col-4 text-center position-relative">
+                <a href="#" class="text-decoration-none text-dark d-block">
+                  <span class="fa-sm">
+                    <i class="fa fa-cart-shopping"></i>
+                  </span>
+                  <span>Giỏ hàng</span>
+                </a>
+              </li>
+              <li class="col-4">
+                <i class="fa fa-user"></i>
+                <a class="text-decoration-none text-dark" id="userLogin"></a>
+              </li>
+              <li class="col-4">
+                <a
+                  href="../html/coming_soon.html"
+                  class="text-decoration-none text-dark d-block"
+                >
+                  <i class="fa fa-headset"></i>
+                  <span>Hỗ trợ</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Menu -->
+    <div class="menu bg-danger">
+      <div class="container p-2">
+        <div class="row">
+          <div class="col-2">
+            <a href="./home.html" class="text-white">Trang chủ</a>
+          </div>
+          <div class="col-2">
+            <a href="../html/productCatelog.html" class="text-white"
+              >Danh mục</a
+            >
+          </div>
+          <div class="col-2">
+            <a href="./infor.html" class="text-white">Giới thiệu</a>
+          </div>
+          <div class="col-2">
+            <a href="./advert.html" class="text-white">Quảng cáo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coming Soon Content -->
+    <div class="coming-soon">
+      <div class="container">
+        <div class="coming-soon-content">
+          <h1>COMING SOON</h1>
+          <p>
+            Chúng tôi đang nâng cấp hệ thống để mang đến trải nghiệm tốt nhất
+            cho bạn. Trang web sẽ hoạt động trở lại sau:
+          </p>
+
+          <div class="countdown">
+            <div class="countdown-item">
+              <div class="countdown-number" id="days">00</div>
+              <div class="countdown-label">Ngày</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-number" id="hours">00</div>
+              <div class="countdown-label">Giờ</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-number" id="minutes">00</div>
+              <div class="countdown-label">Phút</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-number" id="seconds">00</div>
+              <div class="countdown-label">Giây</div>
+            </div>
+          </div>
+
+          <p>Đăng ký nhận thông báo khi chúng tôi chính thức mở cửa trở lại:</p>
+
+          <div class="newsletter-form">
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Nhập email của bạn"
+                aria-label="Email"
+                aria-describedby="basic-addon2"
+              />
+              <button class="btn btn-danger" type="button">Đăng ký</button>
+            </div>
+          </div>
+
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h4 class="fs-5">Về chúng tôi</h4>
+            <ul class="list-menu">
+              <li class="li-menu"><a href="">Trang chủ</a></li>
+              <li class="li-menu"><a href="">Giới thiệu</a></li>
+              <li class="li-menu"><a href="">Sản phẩm</a></li>
+              <li class="li-menu"><a href="">Tin mới nhất</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h4 class="fs-5">Chính sách</h4>
+            <ul class="list-menu">
+              <li class="li-menu"><a href="">Bảo mật</a></li>
+              <li class="li-menu"><a href="">Vận chuyển</a></li>
+              <li class="li-menu"><a href="">Thanh toán</a></li>
+              <li class="li-menu"><a href="">Đổi trả</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h4 class="fs-5">Hỗ trợ</h4>
+            <ul class="list-menu">
+              <li class="li-menu"><a href="">Câu hỏi thường gặp</a></li>
+              <li class="li-menu"><a href="">Liên hệ</a></li>
+              <li class="li-menu"><a href="">Hướng dẫn mua hàng</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <p class="m-0">Bài tập lớn môn hệ thống công nghệ web IUH 2025</p>
+            <p class="m-0">
+              Đề tài: Website giới thiệu, bán máy cơ khí trực tuyến
+            </p>
+            <p class="m-0">Đặng Thế Vỹ - 23668831</p>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Dụng cụ cơ khí Mechanics Zyx</h5>
+            <p class="m-0">Địa chỉ: Gò vấp - TP Hồ Chí Minh</p>
+            <p class="m-0">Điện thoại: 1800 6379</p>
+            <p class="m-0">Email: mechanicsZyx@gmail.com</p>
+          </div>
+
+          <div class="col-md-6">
+            <h5>Kết nối với chúng tôi</h5>
+            <div>
+              <span class="box50 border border-danger mr-3"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></span>
+              <span class="box50 border border-danger mr-3"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></span>
+              <span class="box50 border border-danger mr-3"
+                ><i class="fa-brands fa-google"></i
+              ></span>
+              <span class="box50 border border-danger text-danger mr-3"
+                ><i class="fa-brands fa-youtube"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col">
+            @ Bản quyền thuộc về mechanicsZyx.vn. All right reserved
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+      // Countdown Timer
+      function updateCountdown() {
+        // Set the date we're counting down to (7 days from now)
+        const countDownDate = new Date();
+        countDownDate.setDate(countDownDate.getDate() + 7);
+
+        // Update the countdown every 1 second
+        const x = setInterval(function () {
+          // Get today's date and time
+          const now = new Date().getTime();
+
+          // Find the distance between now and the countdown date
+          const distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the result
+          document.getElementById("days").innerHTML = days
+            .toString()
+            .padStart(2, "0");
+          document.getElementById("hours").innerHTML = hours
+            .toString()
+            .padStart(2, "0");
+          document.getElementById("minutes").innerHTML = minutes
+            .toString()
+            .padStart(2, "0");
+          document.getElementById("seconds").innerHTML = seconds
+            .toString()
+            .padStart(2, "0");
+
+          // If the countdown is finished
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("days").innerHTML = "00";
+            document.getElementById("hours").innerHTML = "00";
+            document.getElementById("minutes").innerHTML = "00";
+            document.getElementById("seconds").innerHTML = "00";
+          }
+        }, 1000);
+      }
+
+      // Initialize when page loads
+      document.addEventListener("DOMContentLoaded", function () {
+        updateCountdown();
+      });
+    </script>
+  </body>
+</html>

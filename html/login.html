@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../font/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/css-html/login.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../assets/owlcarousel/owl.carousel.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#carouselExampleIndicators").carousel();
+      });
+    </script>
+
+    <style>
+      .owl-carousel .item {
+        margin: 10px; /* Điều chỉnh khoảng cách giữa các item */
+      }
+      .cate-list {
+        padding: 20px; /* Điều chỉnh khoảng cách xung quanh carousel */
+      }
+    </style>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: false,
+          dots: false,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 3, // Hiển thị 3 item trên mobile rất nhỏ
+            },
+            480: {
+              items: 4, // Hiển thị 4 item trên mobile
+            },
+            768: {
+              items: 6, // Hiển thị 6 item trên tablet
+            },
+            1000: {
+              items: 8, // Hiển thị 8 item trên desktop
+              loop: false,
+              margin: 20,
+            },
+          },
+        });
+      });
+    </script>
+
+    <title>Login</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-6 col-md-2">
+            <img
+              src="../img/logo.jpg"
+              class="img-fluid"
+              alt="Logo"
+              width="200px"
+            />
+          </div>
+
+          <div class="col-sm-4">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Tìm kiếm"
+                aria-label="Tìm kiếm"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <ul class="row list-unstyled m-0">
+              <li class="col-3 text-center position-relative">
+                <a href="#" class="text-decoration-none text-dark d-block">
+                  <span class="fa-sm">
+                    <i class="fa fa-cart-shopping"></i>
+                  </span>
+                  <!-- <span
+                    class="position-absolute badge badge-pill badge-danger"
+                    style="top: -8px; left: 25px"
+                  >
+                    0
+                  </span> -->
+                  <span>Giỏ hàng</span>
+                </a>
+              </li>
+              <li class="col-5">
+                <span class="text-decoration-none text-dark">
+                  <i class="fa fa-user"></i>
+                  <a
+                    href="../html/register.html"
+                    class="text-decoration-none text-dark"
+                    >Đăng ký</a
+                  >/<a
+                    href="../html/login.html"
+                    class="text-decoration-none text-dark"
+                    >Đăng nhập</a
+                  >
+                </span>
+              </li>
+              <li class="col-3">
+                <a
+                  href="../html/coming_soon.html"
+                  class="text-decoration-none text-dark d-block"
+                >
+                  <i class="fa fa-headset"></i>
+                  <span>Hỗ trợ</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Menu -->
+    <div class="menu bg-danger">
+      <div class="container p-2">
+        <div class="row">
+          <div class="col-2">
+            <a href="./home.html" class="text-white">Trang chủ</a>
+          </div>
+          <div class="col-2 dropdown">
+            <a
+              href="./productCatelog.html"
+              class="text-white"
+              id="categoryMenu"
+            >
+              Danh mục
+            </a>
+          </div>
+          <div class="col-2">
+            <a href="./infor.html" class="text-white">Giới thiệu</a>
+          </div>
+          <div class="col-2">
+            <a href="./advert.html" class="text-white">Quảng cáo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Login -->
+    <div class="container d-flex justify-content-center align-items-center">
+      <form id="formLogin" style="width: 400px">
+        <h3 class="text-center">Đăng nhập tài khoản</h3>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="Nhập email"
+          />
+          <div id="emailError" style="color: red; display: none">
+            Email không được để trống
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Mật khẩu</label>
+          <input
+            type="text"
+            class="form-control"
+            id="password"
+            placeholder="Nhập mật khẩu"
+          />
+          <div id="passwordError" style="color: red; display: none">
+            Mật khẩu không được để trống
+          </div>
+        </div>
+        <div
+          id="alertError"
+          style="display: none"
+          class="alert alert-danger"
+          role="alert"
+        >
+          Email hoặc mật khẩu không đúng
+        </div>
+        <div>
+          <button type="submit" style="width: 100%" class="btn btn-danger">
+            Đăng nhập
+          </button>
+        </div>
+        <p class="text-center mt-2">
+          Bạn chưa có tài khoản? <a href="./register.html">Đăng ký</a>
+        </p>
+      </form>
+    </div>
+    <!-- Footer -->
+    <div class="footer bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h4 class="fs-5">Về chúng tôi</h4>
+            <ul class="list-menu">
+              <li class="li-menu"><a href="">Trang chủ</a></li>
+              <li class="li-menu"><a href="">Giới thiệu</a></li>
+              <li class="li-menu"><a href="">Sản phẩm</a></li>
+              <li class="li-menu"><a href="">Tin mới nhất</a></li>
+              <li class="li-menu"><a href="">Câu hỏi thường gặp</a></li>
+              <li class="li-menu"><a href="">Tuyển dụng</a></li>
+              <li class="li-menu"><a href="">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h4 class="fs-5">Chính sách bán hàng</h4>
+            <ul class="list-menu">
+              <li class="li-menu"><a href="">Trang chủ</a></li>
+              <li class="li-menu"><a href="">Giới thiệu</a></li>
+              <li class="li-menu"><a href="">Sản phẩm</a></li>
+              <li class="li-menu"><a href="">Tin mới nhất</a></li>
+              <li class="li-menu"><a href="">Câu hỏi thường gặp</a></li>
+              <li class="li-menu"><a href="">Tuyển dụng</a></li>
+              <li class="li-menu"><a href="">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h4 class="fs-5">Hỗ trợ khách hàng</h4>
+            <ul class="list-menu">
+              <li class="li-menu"><a href="">Trang chủ</a></li>
+              <li class="li-menu"><a href="">Giới thiệu</a></li>
+              <li class="li-menu"><a href="">Sản phẩm</a></li>
+              <li class="li-menu"><a href="">Tin mới nhất</a></li>
+              <li class="li-menu"><a href="">Câu hỏi thường gặp</a></li>
+              <li class="li-menu"><a href="">Tuyển dụng</a></li>
+              <li class="li-menu"><a href="">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <p class="m-0">Bài tập lớn môn hệ thống công nghệ web IUH 2025</p>
+            <p class="m-0">
+              Đề tài: Website giới thiệu, bán máy cơ khí trực tuyến . Thành viên
+              thực hiện:
+            </p>
+            <p class="m-0">Đặng Thế Vỹ - 23668831</p>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Dụng cụ cơ khí Mechanics Zyx</h5>
+            <p class="m-0">Địa chỉ: Gò vấp - TP Hồ Chí Minh</p>
+            <p class="m-0">Điện thoại: 1800 6379</p>
+            <p class="m-0">Email: mechanicsZyx@gmail.com</p>
+          </div>
+
+          <div class="col-md-6">
+            <h5>Đăng ký nhận thông tin</h5>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="@example.com"
+                aria-label="@example.com"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2">Đăng ký</span>
+            </div>
+            <div>
+              <span class="box50 border border-danger mr-3"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></span>
+
+              <span class="box50 border border-danger mr-3"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></span>
+
+              <span class="box50 border border-danger mr-3"
+                ><i class="fa-brands fa-google"></i
+              ></span>
+
+              <span class="box50 border border-danger text-danger mr-3"
+                ><i class="fa-brands fa-youtube"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col">
+            @ Bản quyền thuộc về mechanicsZyx.vn. All right reserved
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="../js/js-html/login.js"></script>
+  </body>
+</html>

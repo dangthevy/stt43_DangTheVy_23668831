@@ -1,0 +1,133 @@
+@media (max-width: 768px) {
+  /* Header adjustments */
+  .header .col-sm-6 ul {
+    flex-wrap: wrap;
+  }
+  .header .col-sm-6 ul li {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  /* Search bar */
+  .col-sm-4 {
+    order: 3;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  /* Logo */
+  .col-sm-2 {
+    width: 50%;
+  }
+
+  /* Menu */
+  .menu .container > .row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .menu .col-2 {
+    display: inline-block;
+    float: none;
+    padding: 0 10px;
+  }
+
+  /* Product grid */
+  .product-list-s .col-md-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Category carousel */
+  .owl-carousel .item {
+    min-width: 100px;
+  }
+
+  /* Footer */
+  .footer .col-md-3 {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .header .col-sm-6 ul li {
+    width: 100%;
+  }
+
+  .footer .col-md-3 {
+    width: 100%;
+  }
+
+  .product-item {
+    text-align: center;
+  }
+
+  .product-item img {
+    margin: 0 auto;
+  }
+}
+
+hr {
+  height: 1px; /* Độ dày */
+  background-color: black; /* Màu nền */
+  border: none; /* Loại bỏ viền mặc định */
+}
+
+.box50 {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  display: inline-block;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  width: 1000px;
+  height: 500px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.cate-list {
+  max-width: 100%; /* Giới hạn chiều rộng */
+  overflow: hidden; /* Ngăn tràn */
+}
+
+.carousel-inner img {
+  height: 500px; /* hoặc bất kỳ chiều cao nào bạn muốn */
+  object-fit: cover; /* giúp hình ảnh không bị méo */
+}
+
+/* Đảm bảo toàn bộ phần tử thẳng hàng */
+#userLogin .dropdown {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Căn chỉnh icon */
+#userLogin .fa-user {
+  font-size: 1.1em;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Dropdown thẳng hàng với text */
+#userLogin .dropdown-toggle::after {
+  vertical-align: middle;
+}

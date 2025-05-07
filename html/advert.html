@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Mechanics Zyx - Trang quảng cáo sản phẩm</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../font/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/css-html/home.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <style>
+      /* Custom styles for promotion page */
+      .promo-banner {
+        background: linear-gradient(135deg, #ff0000, #990000);
+        color: white;
+        padding: 20px 0;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .promo-banner h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .promo-banner p {
+        font-size: 1.2rem;
+      }
+
+      .promo-countdown {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        margin: 15px auto;
+        display: inline-block;
+      }
+
+      .promo-product {
+        border: 2px solid #ff0000;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 30px;
+        transition: transform 0.3s;
+        background-color: white;
+      }
+
+      .promo-product:hover {
+        transform: scale(1.03);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .promo-badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #ff0000;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
+
+      .original-price {
+        text-decoration: line-through;
+        color: #999;
+        font-size: 1rem;
+      }
+
+      .discounted-price {
+        color: #ff0000;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .savings {
+        color: #00aa00;
+        font-weight: bold;
+      }
+
+      .highlight-box {
+        background-color: #fff8e1;
+        border-left: 4px solid #ffc107;
+        padding: 15px;
+        margin: 20px 0;
+      }
+
+      .feature-list {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .feature-list li {
+        padding: 8px 0;
+        border-bottom: 1px dashed #eee;
+      }
+
+      .feature-list li:before {
+        content: "✓";
+        color: #00aa00;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-sm-2">
+            <img
+              src="../img/logo.jpg"
+              class="img-fluid"
+              alt="Logo"
+              width="200px"
+            />
+          </div>
+          <div class="col-sm-4">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                id="searchInput"
+                class="form-control"
+                placeholder="Tìm kiếm sản phẩm..."
+                aria-label="Tìm kiếm"
+              />
+              <span class="input-group-text" id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <ul class="row list-unstyled m-0">
+              <li class="col-3 text-center position-relative">
+                <a
+                  href="../html/cart.html"
+                  class="text-decoration-none text-dark d-block"
+                >
+                  <span class="fa-sm"><i class="fa fa-cart-shopping"></i></span>
+                  <span>Giỏ hàng</span>
+                </a>
+              </li>
+              <li class="col-5" id="loginRegisterSection">
+                <span class="text-decoration-none text-dark">
+                  <i class="fa fa-user"></i>
+                  <a
+                    href="../html/register.html"
+                    class="text-decoration-none text-dark"
+                    >Đăng ký</a
+                  >/
+                  <a
+                    href="../html/login.html"
+                    class="text-decoration-none text-dark"
+                    >Đăng nhập</a
+                  >
+                </span>
+              </li>
+              <li class="col-3">
+                <a
+                  href="../html/coming_soon.html"
+                  class="text-decoration-none text-dark d-block"
+                >
+                  <i class="fa fa-headset"></i>
+                  <span>Hỗ trợ</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="menu bg-danger">
+      <div class="container p-2">
+        <div class="row">
+          <div class="col-2">
+            <a href="./home.html" class="text-white">Trang chủ</a>
+          </div>
+          <div class="col-2 dropdown">
+            <a
+              href="../html/productCatelog.html"
+              class="text-white"
+              id="categoryMenu"
+            >
+              Danh mục
+            </a>
+          </div>
+          <div class="col-2">
+            <a href="./infor.html" class="text-white">Giới thiệu</a>
+          </div>
+          <div class="col-2">
+            <a href="./advert.html" class="text-white">Quảng cáo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Promotion Banner -->
+    <div class="promo-banner">
+      <div class="container">
+        <h1>KHUYẾN MÃI ĐẶC BIỆT</h1>
+        <p>Giảm giá lên đến 50% cho các sản phẩm cơ khí chất lượng cao</p>
+        <div class="promo-countdown" id="countdown">Kết thúc sau: 02:15:33</div>
+        <a href="#featured-products" class="btn btn-light btn-lg">XEM NGAY</a>
+      </div>
+    </div>
+
+    <!-- Featured Products -->
+    <div class="container" id="featured-products">
+      <div class="row mb-4">
+        <div class="col-12">
+          <h2 class="text-center mb-4">SẢN PHẨM NỔI BẬT</h2>
+
+          <!-- Product 1 -->
+          <div class="row promo-product align-items-center">
+            <div class="col-md-4 text-center position-relative">
+              <span class="promo-badge">-30%</span>
+              <img
+                src="../img/can_keo/can-lac-leo-canKeo.jpg"
+                class="img-fluid"
+                alt="Cần lắc léo"
+              />
+            </div>
+            <div class="col-md-5">
+              <h3>Cần lắc léo 1/2" /381mm Truper M-1267 (13923)</h3>
+              <ul class="feature-list">
+                <li>Chất liệu thép hợp kim cao cấp</li>
+                <li>Độ bền vượt trội, chống mài mòn</li>
+                <li>Thiết kế ergonomic, cầm nắm thoải mái</li>
+                <li>Bảo hành 12 tháng</li>
+              </ul>
+            </div>
+            <div class="col-md-3 text-center">
+              <p class="original-price">357,000đ</p>
+              <p class="discounted-price">250,000đ</p>
+              <p class="savings">Tiết kiệm: 107,000đ</p>
+              <button class="btn btn-danger btn-lg w-100 mb-2">
+                THÊM VÀO GIỎ
+              </button>
+              <button class="btn btn-outline-secondary btn-lg w-100">
+                XEM CHI TIẾT
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="row promo-product align-items-center">
+            <div class="col-md-4 text-center position-relative">
+              <span class="promo-badge">-25%</span>
+              <img
+                src="../img/can_noi/khop-noi-nhanh-sds-plus-1617000132-1603850903.jpg"
+                class="img-fluid"
+                alt="Khớp nối nhanh"
+              />
+            </div>
+            <div class="col-md-5">
+              <h3>Khớp nối nhanh SDS Plus 1617000132</h3>
+              <ul class="feature-list">
+                <li>Thiết kế chuyên dụng cho máy khoan</li>
+                <li>Kết nối nhanh chóng, dễ dàng thao tác</li>
+                <li>Độ chính xác cao, độ bền vượt trội</li>
+                <li>Tương thích với nhiều loại máy</li>
+              </ul>
+            </div>
+            <div class="col-md-3 text-center">
+              <p class="original-price">257,000đ</p>
+              <p class="discounted-price">193,000đ</p>
+              <p class="savings">Tiết kiệm: 64,000đ</p>
+              <button class="btn btn-danger btn-lg w-100 mb-2">
+                THÊM VÀO GIỎ
+              </button>
+              <button class="btn btn-outline-secondary btn-lg w-100">
+                XEM CHI TIẾT
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="row promo-product align-items-center">
+            <div class="col-md-4 text-center position-relative">
+              <span class="promo-badge">-15%</span>
+              <img
+                src="../img/de_co_khi/de-co-khi-25kg-asaki-ak-6885-1680770250.jpg"
+                class="img-fluid"
+                alt="Đe cơ khí"
+              />
+            </div>
+            <div class="col-md-5">
+              <h3>Đe cơ khí 25kg Asaki AK-6885</h3>
+              <ul class="feature-list">
+                <li>Trọng lượng 25kg, chất liệu thép đặc biệt</li>
+                <li>Bề mặt phẳng, độ cứng cao</li>
+                <li>Thích hợp cho rèn, nắn kim loại</li>
+                <li>Thiết kế chắc chắn, ổn định khi sử dụng</li>
+              </ul>
+            </div>
+            <div class="col-md-3 text-center">
+              <p class="original-price">3,187,000đ</p>
+              <p class="discounted-price">2,709,000đ</p>
+              <p class="savings">Tiết kiệm: 478,000đ</p>
+              <button class="btn btn-danger btn-lg w-100 mb-2">
+                THÊM VÀO GIỎ
+              </button>
+              <button class="btn btn-outline-secondary btn-lg w-100">
+                XEM CHI TIẾT
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Special Offer -->
+      <div class="highlight-box">
+        <div class="row">
+          <div class="col-md-8">
+            <h3>
+              <i class="fas fa-gift text-danger"></i> ƯU ĐÃI ĐẶC BIỆT KHI MUA
+              COMBO
+            </h3>
+            <p>
+              Mua combo 3 sản phẩm bất kỳ được giảm thêm 5% tổng giá trị đơn
+              hàng. Áp dụng đến hết ngày 30/04/2025.
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <button class="btn btn-warning btn-lg mt-3">
+              XEM COMBO KHUYẾN MÃI
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Choose Us -->
+      <div class="row mt-5 mb-4">
+        <div class="col-12 text-center">
+          <h2>TẠI SAO CHỌN MECHANICS ZYX?</h2>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+          <div class="p-3">
+            <i class="fas fa-shield-alt fa-3x text-danger mb-3"></i>
+            <h4>CHẤT LƯỢNG ĐẢM BẢO</h4>
+            <p>
+              Sản phẩm chính hãng, chất lượng cao với chế độ bảo hành dài hạn
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+          <div class="p-3">
+            <i class="fas fa-truck fa-3x text-danger mb-3"></i>
+            <h4>GIAO HÀNG NHANH</h4>
+            <p>
+              Miễn phí vận chuyển cho đơn hàng từ 1 triệu đồng trong nội thành
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+          <div class="p-3">
+            <i class="fas fa-headset fa-3x text-danger mb-3"></i>
+            <h4>HỖ TRỢ 24/7</h4>
+            <p>Đội ngũ tư vấn chuyên nghiệp sẵn sàng hỗ trợ mọi lúc</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h4 class="fs-5">Về chúng tôi</h4>
+            <ul class="list-menu">
+              <li class="li-menu"><a href="">Trang chủ</a></li>
+              <li class="li-menu"><a href="">Giới thiệu</a></li>
+              <li class="li-menu"><a href="">Sản phẩm</a></li>
+              <li class="li-menu"><a href="">Tin mới nhất</a></li>
+              <li class="li-menu"><a href="">Câu hỏi thường gặp</a></li>
+              <li class="li-menu"><a href="">Tuyển dụng</a></li>
+              <li class="li-menu"><a href="">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h4 class="fs-5">Chính sách bán hàng</h4>
+            <ul class="list-menu">
+              <li class="li-menu"><a href="">Trang chủ</a></li>
+              <li class="li-menu"><a href="">Giới thiệu</a></li>
+              <li class="li-menu"><a href="">Sản phẩm</a></li>
+              <li class="li-menu"><a href="">Tin mới nhất</a></li>
+              <li class="li-menu"><a href="">Câu hỏi thường gặp</a></li>
+              <li class="li-menu"><a href="">Tuyển dụng</a></li>
+              <li class="li-menu"><a href="">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h4 class="fs-5">Hỗ trợ khách hàng</h4>
+            <ul class="list-menu">
+              <li class="li-menu"><a href="">Trang chủ</a></li>
+              <li class="li-menu"><a href="">Giới thiệu</a></li>
+              <li class="li-menu"><a href="">Sản phẩm</a></li>
+              <li class="li-menu"><a href="">Tin mới nhất</a></li>
+              <li class="li-menu"><a href="">Câu hỏi thường gặp</a></li>
+              <li class="li-menu"><a href="">Tuyển dụng</a></li>
+              <li class="li-menu"><a href="">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <p class="m-0">Bài tập lớn môn hệ thống công nghệ web IUH 2025</p>
+            <p class="m-0">
+              Đề tài: Website giới thiệu, bán máy cơ khí trực tuyến . Thành viên
+              thực hiện:
+            </p>
+            <p class="m-0">Đặng Thế Vỹ - 23668831</p>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Dụng cụ cơ khí Mechanics Zyx</h5>
+            <p class="m-0">Địa chỉ: Gò vấp - TP Hồ Chí Minh</p>
+            <p class="m-0">Điện thoại: 1800 6379</p>
+            <p class="m-0">Email: mechanicsZyx@gmail.com</p>
+          </div>
+
+          <div class="col-md-6">
+            <h5>Đăng ký nhận thông tin</h5>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="@example.com"
+                aria-label="@example.com"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2">Đăng ký</span>
+            </div>
+            <div>
+              <span class="box50 border border-danger mr-3"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></span>
+
+              <span class="box50 border border-danger mr-3"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></span>
+
+              <span class="box50 border border-danger mr-3"
+                ><i class="fa-brands fa-google"></i
+              ></span>
+
+              <span class="box50 border border-danger text-danger mr-3"
+                ><i class="fa-brands fa-youtube"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col">
+            @ Bản quyền thuộc về mechanicsZyx.vn. All right reserved
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../assets/owlcarousel/owl.carousel.js"></script>
+    <script>
+      // Countdown timer
+      function updateCountdown() {
+        const now = new Date();
+        const endOfDay = new Date();
+        endOfDay.setHours(23, 59, 59, 999);
+
+        const diff = endOfDay - now;
+
+        const hours = Math.floor(diff / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML = `Kết thúc sau: ${hours
+          .toString()
+          .padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds
+          .toString()
+          .padStart(2, "0")}`;
+      }
+
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+
+      // Add to cart functionality
+      $(document).ready(function () {
+        $(".add-to-cart").click(function () {
+          const product = $(this).closest(".product-item");
+          const productId = product.data("id");
+          const productName = product.find("h4").text();
+          const productPrice = product.find("h3").text();
+
+          alert(`Đã thêm ${productName} vào giỏ hàng`);
+          // Here you would typically send an AJAX request to add to cart
+        });
+      });
+    </script>
+  </body>
+</html>

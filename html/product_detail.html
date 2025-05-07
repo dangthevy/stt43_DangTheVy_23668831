@@ -1,0 +1,492 @@
+<!-- Chi tiet san pham -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Chi tiết sản phẩm</title>
+    <!-- Thêm các file CSS và JS tương tự như trang category -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../font/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/css-html/home.css" />
+    <style>
+      .product-gallery img {
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      .product-gallery img:hover {
+        transform: scale(1.05);
+      }
+      .main-image {
+        height: 400px;
+        object-fit: contain;
+      }
+      .thumbnail {
+        height: 80px;
+        object-fit: cover;
+        margin: 5px;
+      }
+      .review-card {
+        border-left: 3px solid #dc3545;
+      }
+      .rating i {
+        color: #ffc107;
+      }
+      .product-info {
+        position: sticky;
+        top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-6 col-md-2">
+            <img
+              src="../img/logo.jpg"
+              class="img-fluid"
+              alt="Logo"
+              width="200px"
+            />
+          </div>
+
+          <div class="col-sm-4">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Tìm kiếm"
+                aria-label="Tìm kiếm"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <ul class="row list-unstyled m-0">
+              <li class="col-3 text-center position-relative">
+                <a
+                  href="../html/cart.html"
+                  class="text-decoration-none text-dark d-block"
+                >
+                  <span class="fa-sm">
+                    <i class="fa fa-cart-shopping"></i>
+                  </span>
+                  <!-- <span
+                    class="position-absolute badge badge-pill badge-danger"
+                    style="top: -8px; left: 25px"
+                  >
+                    0
+                  </span> -->
+                  <span>Giỏ hàng</span>
+                </a>
+              </li>
+              <li class="col-5" id="loginRegisterSection">
+                <span class="text-decoration-none text-dark">
+                  <i class="fa fa-user"></i>
+                  <a
+                    href="../html/register.html"
+                    class="text-decoration-none text-dark"
+                    >Đăng ký</a
+                  >/<a
+                    href="../html/login.html"
+                    class="text-decoration-none text-dark"
+                    >Đăng nhập</a
+                  >
+                </span>
+              </li>
+              <li class="col-5">
+                <i class="fa fa-user"></i>
+                <a class="text-decoration-none text-dark" id="userLogin"></a>
+              </li>
+              <li class="col-3">
+                <a
+                  href="../html/coming_soon.html"
+                  class="text-decoration-none text-dark d-block"
+                >
+                  <i class="fa fa-headset"></i>
+                  <span>Hỗ trợ</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Menu -->
+    <div class="menu bg-danger">
+      <div class="container p-2">
+        <div class="row">
+          <div class="col-2">
+            <a href="./home.html" class="text-white">Trang chủ</a>
+          </div>
+          <div class="col-2 dropdown">
+            <a
+              href="../html/productCatelog.html"
+              class="text-white"
+              id="categoryMenu"
+            >
+              Danh mục
+            </a>
+          </div>
+          <div class="col-2">
+            <a href="./infor.html" class="text-white">Giới thiệu</a>
+          </div>
+          <div class="col-2">
+            <a href="./advert.html" class="text-white">Quảng cáo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-4">
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./home.html">Trang chủ</a></li>
+          <li class="breadcrumb-item">
+            <a href="./category.html">Danh mục</a>
+          </li>
+          <li class="breadcrumb-item active" id="js-category-name">
+            Tên danh mục
+          </li>
+          <li class="breadcrumb-item active" id="js-product-name">
+            Tên sản phẩm
+          </li>
+        </ol>
+      </nav>
+
+      <div class="row">
+        <!-- Hình ảnh sản phẩm -->
+        <div class="col-md-6">
+          <div class="product-gallery">
+            <img
+              id="js-main-image"
+              src=""
+              alt="Ảnh sản phẩm"
+              class="img-fluid main-image mb-3"
+            />
+          </div>
+        </div>
+
+        <!-- Thông tin sản phẩm -->
+        <div class="col-md-6 product-info">
+          <h1 id="js-product-title">Tên sản phẩm</h1>
+          <div class="d-flex align-items-center mb-3">
+            <div class="rating mr-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+              <span class="ml-2">(42 đánh giá)</span>
+            </div>
+            <span class="text-success"
+              ><i class="fas fa-check-circle"></i> Còn hàng</span
+            >
+          </div>
+
+          <h3 class="text-danger" id="js-product-price">250,000 VNĐ</h3>
+
+          <div class="mb-4">
+            <h5>Mô tả sản phẩm</h5>
+            <p id="js-product-description">
+              Đây là mô tả chi tiết về sản phẩm. Sản phẩm được làm từ chất liệu
+              cao cấp, bền bỉ theo thời gian...
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <div class="input-group mb-3" style="width: 150px">
+              <div class="input-group-prepend">
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  onclick="decreaseQuantity()"
+                >
+                  -
+                </button>
+              </div>
+              <input
+                type="text"
+                class="form-control text-center"
+                value="1"
+                id="js-quantity"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  onclick="increaseQuantity()"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex mb-4">
+            <button id="js-add-to-cart" class="btn btn-danger mr-3">
+              <i class="fas fa-cart-plus mr-2"></i>Thêm vào giỏ
+            </button>
+            <button class="btn btn-outline-danger">
+              <i class="fas fa-heart mr-2"></i>Yêu thích
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <p class="mb-2">
+                <i class="fas fa-truck mr-2"></i>Miễn phí vận chuyển cho đơn từ
+                500,000 VNĐ
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-shield-alt mr-2"></i>Bảo hành 12 tháng
+              </p>
+              <p class="mb-0">
+                <i class="fas fa-phone-alt mr-2"></i>Hỗ trợ 24/7: 1800 6379
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thông tin chi tiết -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <ul class="nav nav-tabs" id="productTabs" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="description-tab"
+                data-toggle="tab"
+                href="#description"
+                role="tab"
+                >Mô tả chi tiết</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="specs-tab"
+                data-toggle="tab"
+                href="#specs"
+                role="tab"
+                >Thông số kỹ thuật</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="reviews-tab"
+                data-toggle="tab"
+                href="#reviews"
+                role="tab"
+                >Đánh giá</a
+              >
+            </li>
+          </ul>
+
+          <div
+            class="tab-content p-3 border border-top-0"
+            id="productTabsContent"
+          >
+            <div
+              class="tab-pane fade show active"
+              id="description"
+              role="tabpanel"
+            >
+              <div id="js-full-description"></div>
+            </div>
+            <div class="tab-pane fade" id="specs" role="tabpanel">
+              <table class="table">
+                <tbody id="js-specs-table">
+                  <!-- Thông số sẽ được thêm bằng JS -->
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="reviews" role="tabpanel">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>Viết đánh giá</h5>
+                  <form id="reviewForm">
+                    <div class="form-group">
+                      <label for="reviewRating">Đánh giá của bạn</label>
+                      <div class="rating-input mb-2">
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                        <input
+                          type="hidden"
+                          name="rating"
+                          id="reviewRating"
+                          value="0"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="reviewName">Tên của bạn</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="reviewName"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="reviewText">Nội dung đánh giá</label>
+                      <textarea
+                        class="form-control"
+                        id="reviewText"
+                        rows="3"
+                        required
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger">
+                      Gửi đánh giá
+                    </button>
+                  </form>
+                </div>
+                <div class="col-md-6">
+                  <h5>Đánh giá từ khách hàng</h5>
+                  <div id="js-reviews-container">
+                    <!-- Các đánh giá sẽ được thêm bằng JS -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sản phẩm liên quan -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h4>Sản phẩm liên quan</h4>
+          <div class="owl-carousel owl-theme" id="js-related-products">
+            <!-- Sản phẩm liên quan sẽ được thêm bằng JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h4 class="fs-5">Về chúng tôi</h4>
+            <ul class="list-menu">
+              <li class="li-menu"><a href="">Trang chủ</a></li>
+              <li class="li-menu"><a href="">Giới thiệu</a></li>
+              <li class="li-menu"><a href="">Sản phẩm</a></li>
+              <li class="li-menu"><a href="">Tin mới nhất</a></li>
+              <li class="li-menu"><a href="">Câu hỏi thường gặp</a></li>
+              <li class="li-menu"><a href="">Tuyển dụng</a></li>
+              <li class="li-menu"><a href="">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h4 class="fs-5">Chính sách bán hàng</h4>
+            <ul class="list-menu">
+              <li class="li-menu"><a href="">Trang chủ</a></li>
+              <li class="li-menu"><a href="">Giới thiệu</a></li>
+              <li class="li-menu"><a href="">Sản phẩm</a></li>
+              <li class="li-menu"><a href="">Tin mới nhất</a></li>
+              <li class="li-menu"><a href="">Câu hỏi thường gặp</a></li>
+              <li class="li-menu"><a href="">Tuyển dụng</a></li>
+              <li class="li-menu"><a href="">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h4 class="fs-5">Hỗ trợ khách hàng</h4>
+            <ul class="list-menu">
+              <li class="li-menu"><a href="">Trang chủ</a></li>
+              <li class="li-menu"><a href="">Giới thiệu</a></li>
+              <li class="li-menu"><a href="">Sản phẩm</a></li>
+              <li class="li-menu"><a href="">Tin mới nhất</a></li>
+              <li class="li-menu"><a href="">Câu hỏi thường gặp</a></li>
+              <li class="li-menu"><a href="">Tuyển dụng</a></li>
+              <li class="li-menu"><a href="">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <p class="m-0">Bài tập lớn môn hệ thống công nghệ web IUH 2025</p>
+            <p class="m-0">
+              Đề tài: Website giới thiệu, bán máy cơ khí trực tuyến . Thành viên
+              thực hiện:
+            </p>
+            <p class="m-0">Đặng Thế Vỹ - 23668831</p>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Dụng cụ cơ khí Mechanics Zyx</h5>
+            <p class="m-0">Địa chỉ: Gò vấp - TP Hồ Chí Minh</p>
+            <p class="m-0">Điện thoại: 1800 6379</p>
+            <p class="m-0">Email: mechanicsZyx@gmail.com</p>
+          </div>
+
+          <div class="col-md-6">
+            <h5>Đăng ký nhận thông tin</h5>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="@example.com"
+                aria-label="@example.com"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2">Đăng ký</span>
+            </div>
+            <div>
+              <span class="box50 border border-danger mr-3"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></span>
+
+              <span class="box50 border border-danger mr-3"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></span>
+
+              <span class="box50 border border-danger mr-3"
+                ><i class="fa-brands fa-google"></i
+              ></span>
+
+              <span class="box50 border border-danger text-danger mr-3"
+                ><i class="fa-brands fa-youtube"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col">
+            @ Bản quyền thuộc về mechanicsZyx.vn. All right reserved
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="../js/js-html/home.js"></script>
+    <script src="../js/js-html/cart.js"></script>
+    <script type="module" src="../js/js-html/category.js"></script>
+    <script src="../js/js-html/product_detail.js"></script>
+  </body>
+</html>

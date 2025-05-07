@@ -1,0 +1,46 @@
+hr {
+  height: 1px; /* Độ dày */
+  background-color: black; /* Màu nền */
+  border: none; /* Loại bỏ viền mặc định */
+}
+
+.box50 {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  display: inline-block;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  width: 1000px;
+  height: 500px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.cate-list {
+  max-width: 100%; /* Giới hạn chiều rộng */
+  overflow: hidden; /* Ngăn tràn */
+}
+
+.container.d-flex.justify-content-center.align-items-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

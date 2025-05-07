@@ -1,0 +1,660 @@
+[
+  {
+    "id": 1,
+    "name": "Cần kéo 1/2 inch",
+    "price": 250000,
+    "image": "/img/can_keo/can-lac-leo-1-2.jpg",
+    "category": "can_keo"
+  },
+  {
+    "id": 2,
+    "name": "Đầu bắn vít bẻ góc 90 độ Kingtony 759-140",
+    "price": 619000,
+    "image": "/img/can_keo/dau_ban_vit.jpg",
+    "category": "can_keo"
+  },
+  {
+    "id": 3,
+    "name": "Cần trượt 3/8'' Tolsen 15130",
+    "price": 55000,
+    "image": "/img/can_keo/can-truot-3-8-tolsen-15130.jpg",
+    "category": "can_keo"
+  },
+  {
+    "id": 4,
+    "name": "Khớp nối nhanh SDS Plus 1617000132",
+    "price": 193000,
+    "image": "/img/can_noi/khop-noi-nhanh-sds-plus-1617000132-1603850903.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 5,
+    "name": "Đầu nối lắc léo Tolsen 15133",
+    "price": 36000,
+    "image": "/img/can_noi/dau-noi-lac-leo-tolsen-15133-1599535302.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 6,
+    "name": "Đầu nối lắc léo Kingtony 4798P (1/2 inch)",
+    "price": 36000,
+    "image": "/img/can_noi/dau-noi-lac-leo-kingtony-4798p-1-2-inch-1595671931.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 7,
+    "name": "Đầu nối Kingtony 2221-06 1/4 x 6",
+    "price": 40000,
+    "image": "/img/can_noi/dau-noi-kingtony-2221-06-1-4-x-6.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 8,
+    "name": "Đầu nối Kingtony 4251-06R 1/2 x 6",
+    "price": 82800,
+    "image": "/img/can_noi/1585483282.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 9,
+    "name": "Đầu nối Kingtony 4251-08 1/2 x 8",
+    "price": 103000,
+    "image": "/img/can_noi/1585483282.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 10,
+    "name": "Đầu nối Kingtony 4251-02R 1/2 x 2",
+    "price": 58800,
+    "image": "/img/can_noi/1585483282.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 11,
+    "name": "Cần siết lực và đầu chuyển Yato YT-0300",
+    "price": 2000000,
+    "image": "/img/can_noi/can-siet-luc-va-dau-chuyen-yato-yt-0300-1624264418.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 12,
+    "name": "Thanh nối mở tuýp 1/2 Total THEB12101 254mm",
+    "price": 87000,
+    "image": "/img/can_noi/thanh-noi-mo-tuyp-1-2-total-theb12101-254mm-1719912220.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 13,
+    "name": "Đầu nối lắc léo 1/2'' Ingco HHUJ1121",
+    "price": 68000,
+    "image": "/img/can_noi/dau-noi-lac-leo-1-2-ingco-hhuj1121-1612401204.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 14,
+    "name": "Đầu nối 3/8 dài 3 Sata 12903",
+    "price": 89100,
+    "image": "/img/can_noi/dau-noi-3-8--dai-3--sata-12903.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 15,
+    "name": "Đầu nối 3/8 dài 6 Sata 12904",
+    "price": 110000,
+    "image": "/img/can_noi/dau-noi-3-8--dai-3--sata-12903.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 16,
+    "name": "Cây nối 1/4x2 Toptul CAAA0802",
+    "price": 26000,
+    "image": "/img/can_noi/cay-noi-1-4-x2-toptul-caaa0802-1.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 17,
+    "name": "Đầu cần cân lực mở Toptul ANAK0317",
+    "price": 259000,
+    "image": "/img/can_noi/dau-can-can-luc-mo-toptul-anak0317-1664866963.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 18,
+    "name": "Cần siết nhanh tự động 3 trong 1 Workpro WP271014",
+    "price": 154000,
+    "image": "/img/can_noi/can-siet-nhanh-tu-dong-3-trong-1-workpro-wp271014-1667958511.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 19,
+    "name": "Thanh nối 3/8 loại linh hoạt TOP Japan EX-3050F",
+    "price": 300000,
+    "image": "/img/can_noi/thanh-noi-3-8-loai-linh-hoat-top-japan-ex-3050f-1712079563.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 20,
+    "name": "Đầu nối lắt léo 3/8 TOP Japan UN-3",
+    "price": 493000,
+    "image": "/img/can_noi/dau-noi-lat-leo-3-8-top-japan-un-3-1712079763.jpg",
+    "category": "can_noi"
+  },
+  {
+    "id": 21,
+    "name": "Tay vặn chữ T 8mm Kingtony 118408",
+    "price": 149000,
+    "image": "/img/can_siet/tay-van-chu-t-8mm-kingtony-118408-1589164000.jpg",
+    "category": "can_siet"
+  },
+  {
+    "id": 22,
+    "name": "Tay vặn tự động 3/8 Sata 12970",
+    "price": 823000,
+    "image": "/img/can_siet/tay-van-tu-dong-3-8--sata-12970.jpg",
+    "category": "can_siet"
+  },
+  {
+    "id": 23,
+    "name": "1/4 Cần nối Sata 11903",
+    "price": 79200,
+    "image": "/img/can_siet/tay-van-1-4--dai-2--sata-11903.jpg",
+    "category": "can_siet"
+  },
+  {
+    "id": 24,
+    "name": "Cần xiết lực 3/8 Toptul ANAM1205",
+    "price": 2462000,
+    "image": "/img/can_siet/can-xiet-luc-3-8-toptul-anam1205-1.jpg",
+    "category": "can_siet"
+  },
+  {
+    "id": 25,
+    "name": "Cần xiết lực 1/2 Toptul ANAF1621",
+    "price": 2090000,
+    "image": "/img/can_siet/can-xiet-luc-1-2-toptul-anaf1621-1.jpg",
+    "category": "can_siet"
+  },
+  {
+    "id": 26,
+    "name": "Cần siết chữ T 8mm (cán nhựa đen) Top CTWT-10093B-08",
+    "price": 60000,
+    "image": "/img/can_siet/can-siet-chu-t-8mm-can-nhua-den-top-ctwt-10093b-08-1699693382.jpg",
+    "category": "can_siet"
+  },
+  {
+    "id": 27,
+    "name": "Tay vặn chữ L Tajima TU-JL",
+    "price": 110000,
+    "image": "/img/can_siet/tay-van-chu-l-tajima-tu-jl-1.jpg",
+    "category": "can_siet"
+  },
+  {
+    "id": 28,
+    "name": "Bộ Socket 12 chi tiết Milwaukee 48-22-9001",
+    "price": 980000,
+    "image": "/img/can_siet/bo-socket-12-chi-tiet-milwaukee-48-22-9001-1716518936.jpg",
+    "category": "can_siet"
+  },
+  {
+    "id": 29,
+    "name": "Cần nổ Kingtony 34423-2A 1/2 inch 70-340Nm",
+    "price": 1790000,
+    "image": "/img/can_siet/can-no-kingtony-34423-2a-1-2-70-340nm.jpg",
+    "category": "can_siet"
+  },
+  {
+    "id": 30,
+    "name": "Cần tự động 3/8 Kingtony 3779-08",
+    "price": 280000,
+    "image": "/img/can_siet/can-tu-dong-3-8-kingtony-3779-08-1547788740.jpg",
+    "category": "can_siet"
+  },
+  {
+    "id": 31,
+    "name": "Bộ cần siết bu lông và vít 46 chi tiết 1/4 Wodfow WP202540",
+    "price": 627000,
+    "image": "/img/can_siet/bo-can-siet-bu-long-va-vit-46-chi-tiet-1-4-wodfow-wp202540-1736308996.jpg",
+    "category": "can_siet"
+  },
+  {
+    "id": 32,
+    "name": "22mm Đầu tuýp cốt 1/2 inch thân dài Makita B-52255",
+    "price": 99000,
+    "image": "/img/tuyt/dau-tuyp-dai-127mm-1-2-22x815mm-makita-b-52255-1714378445.jpg",
+    "category": "tuyt"
+  },
+  {
+    "id": 33,
+    "name": "Đầu chuyển tuýp 1/4 Sata 11912",
+    "price": 99000,
+    "image": "/img/tuyt/tuyp-lac-leo-1-4--sata-11912.jpg",
+    "category": "tuyt"
+  },
+  {
+    "id": 34,
+    "name": "32mm Đầu tuýp cốt 1/2 inch thân dài Makita B-52299",
+    "price": 129000,
+    "image": "/img/tuyt/dau-tuyp-dai-127mm-1-2-32x815mm-makita-b-52299-1714378042.jpg",
+    "category": "tuyt"
+  },
+  {
+    "id": 35,
+    "name": "Bộ tuýp 33 chi tiết hệ mét Kingtony 4034MR 1/2",
+    "price": 2649000,
+    "image": "/img/tuyt/bo-tuyp-33-chi-tiet-he-met-kingtony-4034mr-1-2-1606890356.jpg",
+    "category": "tuyt"
+  },
+  {
+    "id": 36,
+    "name": "Bộ tuýp 25 chi tiết BAKER LOFH1215(Lục)",
+    "price": 970000,
+    "image": "/img/tuyt/bo-tuyp-25-chi-tiet-baker-lofh1215-1620462989.jpg",
+    "category": "tuyt"
+  },
+  {
+    "id": 37,
+    "name": "Bộ khẩu 24 chi tiết Tajima TS-24",
+    "price": 1939000,
+    "image": "/img/tuyt/bo-khau-24-chi-tiet-tajima-ts-24-1.jpg",
+    "category": "tuyt"
+  },
+  {
+    "id": 38,
+    "name": "Tuýp mở bugi 1/2 có nam châm Toptul BBAR1626",
+    "price": 64000,
+    "image": "/img/tuyt/tuyp-mo-bugi-co-nam-cham-toptul-bbar1626-1.jpg",
+    "category": "tuyt"
+  },
+  {
+    "id": 39,
+    "name": "Đầu tuýp lục giác 1/2'' x 24mm Top TS-C24",
+    "price": 30000,
+    "image": "/img/tuyt/dau-tuyp-luc-giac-1-2-x-24mm-ts-c24-top-1627026117.jpg",
+    "category": "tuyt"
+  },
+  {
+    "id": 40,
+    "name": "Bộ 9 đầu tuýp 1/2 40mm Bosch 2608551100",
+    "price": 902000,
+    "image": "/img/tuyt/bo-9-dau-tuyp-1-2-40mm-bosch-2608551100-1661781157.jpg",
+    "category": "tuyt"
+  },
+  {
+    "id": 41,
+    "name": "1/2 Bộ tuýp 23 chi tiết hộp nhựa Stanley STMT75095-8C",
+    "price": 2197000,
+    "image": "/img/tuyt/1-2-bo-tuyp-23-chi-tiet-hop-nhua-stanley-stmt75095-8c-1595678578.jpg",
+    "category": "tuyt"
+  },
+  {
+    "id": 42,
+    "name": "Ống điếu Kingtony 1080-12 12mm",
+    "price": 110000,
+    "image": "/img/ong_dieu/ong-dieu-kingtony-1080-12-12mm-1566207023.jpg",
+    "category": "ong_dieu"
+  },
+  {
+    "id": 43,
+    "name": "Ống điếu Kingtony 1080-16 16mm",
+    "price": 117000,
+    "image": "/img/ong_dieu/ong-dieu-kingtony-1080-16-16mm-1616128652.jpg",
+    "category": "ong_dieu"
+  },
+  {
+    "id": 44,
+    "name": "Ống điếu Kingtony 1080-18 18mm",
+    "price": 169000,
+    "image": "/img/ong_dieu/ong-dieu-kingtony-1080-18-18mm.jpg",
+    "category": "ong_dieu"
+  },
+  {
+    "id": 45,
+    "name": "Ống điếu Kingtony 1080-15 15mm",
+    "price": 110000,
+    "image": "/img/ong_dieu/ong-dieu-kingtony-1080-12-12mm-1566207023.jpg",
+    "category": "ong_dieu"
+  },
+  {
+    "id": 46,
+    "name": "Điếu lỗ xi bóng 12mm Top 121124-12MM",
+    "price": 69000,
+    "image": "/img/ong_dieu/dieu-lo-xi-bong-12mm-top-121124-12mm-1697533668.jpg",
+    "category": "ong_dieu"
+  },
+  {
+    "id": 47,
+    "name": "Điếu lỗ xi bóng 14mm Top 121124-14MM",
+    "price": 110000,
+    "image": "/img/ong_dieu/ong-dieu-kingtony-1080-12-12mm-1566207023.jpg",
+    "category": "ong_dieu"
+  },
+  {
+    "id": 48,
+    "name": "Ống điếu Kingtony 1080-27 27mm",
+    "price": 370000,
+    "image": "/img/ong_dieu/ong-dieu-kingtony-1080-27-27mm-1561777370.jpg",
+    "category": "ong_dieu"
+  },
+  {
+    "id": 49,
+    "name": "Bộ 8 Đầu tuýp tay vặn chữ L 8-19mm WadFow WTH4208",
+    "price": 414000,
+    "image": "/img/ong_dieu/bo-8-dau-tuyp-tay-van-chu-l-8-19mm-wadfow-wth4208-1711703168.jpg",
+    "category": "ong_dieu"
+  },
+  {
+    "id": 50,
+    "name": "Đầu điếu Total THWL1406 14mm",
+    "price": 82000,
+    "image": "/img/ong_dieu/dau-dieu-total-thwl1406-14mm-1719976682.jpg",
+    "category": "ong_dieu"
+  },
+  {
+    "id": 51,
+    "name": "Đầu tuýp tay vặn chữ L 17mm WadFow WTH3117",
+    "price": 69000,
+    "image": "/img/ong_dieu/dau-tuyp-tay-van-chu-l-17mm-wadfow-wth3117-1711703750.jpg",
+    "category": "ong_dieu"
+  },
+  {
+    "id": 52,
+    "name": "Đầu tuýp tay vặn chữ L WadFow WTH3114 14mm",
+    "price": 110000,
+    "image": "/img/ong_dieu/dau-tuyp-tay-van-chu-l-wadfow-wth3114-14mm-1711704458.jpg",
+    "category": "ong_dieu"
+  },
+  {
+    "id": 53,
+    "name": "Đe cơ khí 25kg Asaki AK-6885",
+    "price": 2709000,
+    "image": "/img/de_co_khi/de-co-khi-25kg-asaki-ak-6885-1680770250.jpg",
+    "category": "de_co_khi"
+  },
+  {
+    "id": 54,
+    "name": "Cảo chữ F Total THT1320801 80x300mm",
+    "price": 133000,
+    "image": "/img/dung_cu_cao/cao-chu-f-total-tht1320801-80x300mm-1720082300.jpg",
+    "category": "dung_cu_cao"
+  },
+  {
+    "id": 55,
+    "name": "60'' Êtô kẹp nhanh chữ L IRWIN 10503579",
+    "price": 1331000,
+    "image": "/img/dung_cu_cao/60-eto-kep-nhanh-chu-l-irwin-10503579-1716523436.jpg",
+    "category": "dung_cu_cao"
+  },
+  {
+    "id": 56,
+    "name": "Cảo chữ F Total THT1321204 120x800mm",
+    "price": 304000,
+    "image": "/img/dung_cu_cao/cao-chu-f-total-tht1321204-120x800mm-1720412412.jpg",
+    "category": "dung_cu_cao"
+  },
+  {
+    "id": 57,
+    "name": "Cảo dĩa Toptul JEAD0305",
+    "price": 611000,
+    "image": "/img/dung_cu_cao/cao-dia-toptul-jead0305.jpg",
+    "category": "dung_cu_cao"
+  },
+  {
+    "id": 58,
+    "name": "Cảo rô tuyn (rotin) xe hơi cao cấp LICOTA ATC-2011",
+    "price": 590000,
+    "image": "/img/dung_cu_cao/cao-ro-tuyn-rotin-xe-hoi-cao-cap-licota-atc-2011.jpg",
+    "category": "dung_cu_cao"
+  },
+  {
+    "id": 59,
+    "name": "100mm Kẹp nhanh IRWIN T59400ECD",
+    "price": 219000,
+    "image": "/img/dung_cu_cao/100mm-kep-nhanh-irwin-t59400ecd-1716520188.jpg",
+    "category": "dung_cu_cao"
+  },
+  {
+    "id": 60,
+    "name": "50mm Kẹp nhanh IRWIN T59200ECD",
+    "price": 189000,
+    "image": "/img/dung_cu_cao/100mm-kep-nhanh-irwin-t59400ecd-1716520188.jpg",
+    "category": "dung_cu_cao"
+  },
+  {
+    "id": 61,
+    "name": "38mm Kẹp nhanh IRWIN T59100ECD",
+    "price": 124000,
+    "image": "/img/dung_cu_cao/100mm-kep-nhanh-irwin-t59400ecd-1716520188.jpg",
+    "category": "dung_cu_cao"
+  },
+  {
+    "id": 62,
+    "name": "25x38mm Kẹp gỗ IRWIN TM130",
+    "price": 715000,
+    "image": "/img/dung_cu_cao/25x38mm-kep-go-irwin-tm130-1622269483.jpg",
+    "category": "dung_cu_cao"
+  },
+  {
+    "id": 63,
+    "name": "32'' Êtô kẹp nhanh chữ L IRWIN 10503576",
+    "price": 1060000,
+    "image": "/img/e_to/32-eto-kep-nhanh-chu-l-irwin-10503576-1716523322.jpg",
+    "category": "e_to"
+  },
+  {
+    "id": 64,
+    "name": "8'' Ê tô IRWIN T8",
+    "price": 4489000,
+    "image": "/img/e_to/8-e-to-irwin-t8-1.jpg",
+    "category": "e_to"
+  },
+  {
+    "id": 65,
+    "name": "Ê tô bàn nguội 4''/100mm Asaki AK-0667",
+    "price": 746000,
+    "image": "/img/e_to/e-to-ban-nguoi-ak-0667-1718599104.jpg",
+    "category": "e_to"
+  },
+  {
+    "id": 66,
+    "name": "4” Êtô mâm xoay Stanley 81-601",
+    "price": 690000,
+    "image": "/img/e_to/4-eto-xoay-century-111128-4-1696389717.jpg",
+    "category": "e_to"
+  },
+  {
+    "id": 67,
+    "name": "Ê tô kẹp bàn 3'' IRWIN TV75B",
+    "price": 669000,
+    "image": "/img/e_to/e-to-kep-ban-3-irwin-tv75b-1622701042.jpg",
+    "category": "e_to"
+  },
+  {
+    "id": 68,
+    "name": "50' Êtô kẹp nhanh IRWIN 1964716",
+    "price": 939000,
+    "image": "/img/e_to/50-eto-kep-nhanh-irwin-1964716-1716518284.jpg",
+    "category": "e_to"
+  },
+  {
+    "id": 69,
+    "name": "24' Êtô kẹp nhanh IRWIN 1964714",
+    "price": 725000,
+    "image": "/img/e_to/50-eto-kep-nhanh-irwin-1964716-1716518284.jpg",
+    "category": "e_to"
+  },
+  {
+    "id": 70,
+    "name": "18' Êtô kẹp nhanh IRWIN 1964713",
+    "price": 658000,
+    "image": "/img/e_to/50-eto-kep-nhanh-irwin-1964716-1716518284.jpg",
+    "category": "e_to"
+  },
+  {
+    "id": 71,
+    "name": "5/16-2' Mỏ lết xích IRWIN T231-1/2",
+    "price": 2650000,
+    "image": "/img/mo_lech/5-16-2-mo-let-xich-irwin-t231-1-2-1.jpg",
+    "category": "mo_lech"
+  },
+  {
+    "id": 72,
+    "name": "Mỏ lết 18' 450mm IRWIN T9098096",
+    "price": 679000,
+    "image": "/img/mo_lech/mo-let-18-450mm-irwin-t9098096-1622684749.jpg",
+    "category": "mo_lech"
+  },
+  {
+    "id": 73,
+    "name": "450mm Mỏ lết Goodman 18Inch L8",
+    "price": 660000,
+    "image": "/img/mo_lech/mo-let-goodman-18-l8-1.jpg",
+    "category": "mo_lech"
+  },
+  {
+    "id": 74,
+    "name": "6” Mỏ lết răng Stanley 87-620",
+    "price": 150000,
+    "image": "/img/mo_lech/6-mo-let-rang-stanley-87-620.jpg",
+    "category": "mo_lech"
+  },
+  {
+    "id": 75,
+    "name": "14” Mỏ lết răng Stanley 87-624",
+    "price": 416000,
+    "image": "/img/mo_lech/6-mo-let-rang-stanley-87-620.jpg",
+    "category": "mo_lech"
+  },
+  {
+    "id": 76,
+    "name": "8' Mỏ lết Stanley STMT87432-8",
+    "price": 164000,
+    "image": "/img/mo_lech/8--mo-let-stanley-87-432.jpg",
+    "category": "mo_lech"
+  },
+  {
+    "id": 77,
+    "name": "24' Mỏ lết răng IRWIN T350/24",
+    "price": 1139000,
+    "image": "/img/mo_lech/24-mo-let-rang-irwin-t350-24.jpg",
+    "category": "mo_lech"
+  },
+  {
+    "id": 78,
+    "name": "4' Mỏ lết Stanley 87-430",
+    "price": 122000,
+    "image": "/img/mo_lech/4--mo-let-stanley-87-430.jpg",
+    "category": "mo_lech"
+  },
+  {
+    "id": 79,
+    "name": "15' Mỏ lết Stanley STMT87435-8",
+    "price": 452000,
+    "image": "/img/mo_lech/4--mo-let-stanley-87-430.jpg",
+    "category": "mo_lech"
+  },
+  {
+    "id": 80,
+    "name": "Bộ 3 mỏ lết Tolsen 15007",
+    "price": 450000,
+    "image": "/img/mo_lech/bo-3-mo-let-tolsen-15007-1522891522.jpg",
+    "category": "mo_lech"
+  },
+  {
+    "id": 81,
+    "name": "Cờ lê vòng miệng 15mm Toptul AAEB1515",
+    "price": 86000,
+    "image": "/img/co_le/co-le-vong-mieng-15mm-toptul-aaeb1515-4.jpg",
+    "category": "co_le"
+  },
+  {
+    "id": 82,
+    "name": "Bộ cờ lê vòng miệng hệ inch TOPTUL GPBW1601",
+    "price": 2440000,
+    "image": "/img/co_le/bo-co-le-vong-mieng-he-inch-toptul-gpbw1601-1666860444.jpg",
+    "category": "co_le"
+  },
+  {
+    "id": 83,
+    "name": "Cờ lê móc 35-50mm Toptul AEEX1A50",
+    "price": 519000,
+    "image": "/img/co_le/co-le-moc-210mm-toptul-aeex1a50.jpg",
+    "category": "co_le"
+  },
+  {
+    "id": 84,
+    "name": "Cờ lê hai đầu miệng Sata 41211 (23x26mm)",
+    "price": 219000,
+    "image": "/img/co_le/23x26mm-co-le-hai-dau-mieng-sata-41211.jpg",
+    "category": "co_le"
+  },
+  {
+    "id": 85,
+    "name": "Bộ cờ lê cóc 11 chiếc 8-19mm milwaukee 48-22-9511",
+    "price": 1190000,
+    "image": "/img/co_le/bo-co-le-coc-11-chiec-8-19mm-milwaukee-48-22-9511-1693563267.jpg",
+    "category": "co_le"
+  },
+  {
+    "id": 86,
+    "name": "14mm Cờ lê vòng miệng tay đòn tự động Sata 46307",
+    "price": 294000,
+    "image": "/img/co_le/co-le-vong-mieng-tay-don-tu-dong-sata-46307-14mm.jpg",
+    "category": "co_le"
+  },
+  {
+    "id": 87,
+    "name": "13mm Cờ lê vòng miệng tay đòn tự động Sata 46306",
+    "price": 279000,
+    "image": "/img/co_le/co-le-vong-mieng-tay-don-tu-dong-sata-46307-14mm.jpg",
+    "category": "co_le"
+  },
+  {
+    "id": 88,
+    "name": "Lục giác bi Kingtony 112002 2mm",
+    "price": 25000,
+    "image": "/img/luc_giac/luc-giac-bi-kingtony-112002-2mm.jpg",
+    "category": "luc_giac"
+  },
+  {
+    "id": 89,
+    "name": "Lục giác đầu bi Standard LGB040 4mm",
+    "price": 27000,
+    "image": "/img/luc_giac/luc-giac-dau-bi-standard-lgb040-4mm-1515550076.jpg",
+    "category": "luc_giac"
+  },
+  {
+    "id": 90,
+    "name": "8mm Lục giác chữ T 2 đầu Stanley 69-284-22",
+    "price": 129000,
+    "image": "/img/luc_giac/8mm-luc-giac-chu-t-2-dau-stanley-69-284-22-1614586272.jpg",
+    "category": "luc_giac"
+  },
+  {
+    "id": 91,
+    "name": "8mm Lục giác đầu bi Stanley STMT94108-8",
+    "price": 55000,
+    "image": "/img/luc_giac/8mm-luc-giac-dau-bi-stanley-stmt94108-8-1614585376.jpg",
+    "category": "luc_giac"
+  },
+  {
+    "id": 92,
+    "name": "Bộ chìa lục giác sao 8 cây hoa thị Stanley 69-263",
+    "price": 170000,
+    "image": "/img/luc_giac/bo-chia-luc-giac-sao-8-cay-hoa-thi-stanley-69-263-1646980057.jpg",
+    "category": "luc_giac"
+  },
+  {
+    "id": 93,
+    "name": "Bộ lục giác sao dài 9 chi tiết T10-T50 Sata 09702CH",
+    "price": 495000,
+    "image": "/img/luc_giac/bo-luc-giac-sao-dai-9-chi-tiet-t10-t50-sata-09702ch-1701154068.jpg",
+    "category": "luc_giac"
+  },
+  {
+    "id": 94,
+    "name": "Bộ lục giác chữ T 8 chi tiết IRWIN 9097009 (2-10m)",
+    "price": 508000,
+    "image": "/img/luc_giac/bo-luc-giac-chu-t-8-chi-tiet-irwin-9097009-2-10m-1553738908.jpg",
+    "category": "luc_giac"
+  }
+]

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../font/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/css-html/home.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <style>
+      /* Phần cơ bản giữ nguyên */
+      body {
+        background-color: #f8f9fa;
+      }
+      .category-title {
+        background-color: #dc3545;
+        color: #fff;
+        padding: 10px 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .cate-list {
+        padding: 20px;
+      }
+
+      /* Quan trọng: Cấu hình Owl Carousel 2 hàng */
+      .owl-carousel {
+        width: 100%;
+        overflow: hidden;
+        display: block;
+      }
+      .owl-stage {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-content: space-between; /* Căn đều 2 hàng */
+        height: auto !important;
+      }
+      .owl-item {
+        width: 23.67% !important;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      /* Responsive */
+      @media (max-width: 1200px) {
+        .owl-item {
+          width: 20% !important;
+        } /* 5 item/hàng */
+      }
+      @media (max-width: 992px) {
+        .owl-item {
+          width: 25% !important;
+        } /* 4 item/hàng */
+      }
+      @media (max-width: 768px) {
+        .owl-item {
+          width: 33.333% !important;
+        } /* 3 item/hàng */
+      }
+      @media (max-width: 576px) {
+        .owl-item {
+          width: 50% !important;
+        } /* 2 item/hàng */
+      }
+
+      /* Thiết kế item */
+      .item {
+        height: 100%;
+      }
+      .category-icon {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .category-icon img {
+        max-width: 100%;
+        height: 80px;
+        object-fit: contain;
+        margin: 0 auto;
+      }
+      .category-icon h5 {
+        margin-top: 10px;
+        font-size: 1rem;
+        text-align: center;
+      }
+    </style>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../assets/owlcarousel/owl.carousel.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#carouselExampleIndicators").carousel();
+      });
+    </script>
+
+    <style>
+      .owl-carousel .item {
+        margin: 10px; /* Điều chỉnh khoảng cách giữa các item */
+      }
+      .cate-list {
+        padding: 20px; /* Điều chỉnh khoảng cách xung quanh carousel */
+      }
+    </style>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: false,
+          dots: false,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 3, // Hiển thị 3 item trên mobile rất nhỏ
+            },
+            480: {
+              items: 4, // Hiển thị 4 item trên mobile
+            },
+            768: {
+              items: 6, // Hiển thị 6 item trên tablet
+            },
+            1000: {
+              items: 8, // Hiển thị 8 item trên desktop
+              loop: false,
+              margin: 20,
+            },
+          },
+        });
+      });
+    </script>
+    <title>Danh Mục Sản Phẩm</title>
+  </head>
+  <body>
+    <!-- Header (Optional: Can be customized or omitted) -->
+    <div class="header">
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-6 col-md-2">
+            <img
+              src="../img/logo.jpg"
+              class="img-fluid"
+              alt="Logo"
+              width="200px"
+            />
+          </div>
+
+          <div class="col-sm-4">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Tìm kiếm"
+                aria-label="Tìm kiếm"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <ul class="row list-unstyled m-0">
+              <li class="col-3 text-center position-relative">
+                <a
+                  href="../html/cart.html"
+                  class="text-decoration-none text-dark d-block"
+                >
+                  <span class="fa-sm">
+                    <i class="fa fa-cart-shopping"></i>
+                  </span>
+                  <!-- <span
+                    class="position-absolute badge badge-pill badge-danger"
+                    style="top: -8px; left: 25px"
+                  >
+                    0
+                  </span> -->
+                  <span>Giỏ hàng</span>
+                </a>
+              </li>
+              <li class="col-5" id="loginRegisterSection">
+                <span class="text-decoration-none text-dark">
+                  <i class="fa fa-user"></i>
+                  <a
+                    href="../html/register.html"
+                    class="text-decoration-none text-dark"
+                    >Đăng ký</a
+                  >/<a
+                    href="../html/login.html"
+                    class="text-decoration-none text-dark"
+                    >Đăng nhập</a
+                  >
+                </span>
+              </li>
+              <li class="col-5">
+                <i class="fa fa-user"></i>
+                <a class="text-decoration-none text-dark" id="userLogin"></a>
+              </li>
+              <li class="col-3">
+                <a
+                  href="../html/coming_soon.html"
+                  class="text-decoration-none text-dark d-block"
+                >
+                  <i class="fa fa-headset"></i>
+                  <span>Hỗ trợ</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="menu bg-danger">
+      <div class="container p-2">
+        <div class="row">
+          <div class="col-2">
+            <a href="./home.html" class="text-white">Trang chủ</a>
+          </div>
+          <div class="col-2 dropdown">
+            <a
+              href="./productCatelog.html"
+              class="text-white"
+              id="categoryMenu"
+            >
+              Danh mục
+            </a>
+          </div>
+          <div class="col-2">
+            <a href="./infor.html" class="text-white">Giới thiệu</a>
+          </div>
+          <div class="col-2">
+            <a href="./advert.html" class="text-white">Quảng cáo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container my-4">
+      <div class="cate-list">
+        <div class="owl-carousel owl-theme">
+          <!-- Category Item 1 -->
+          <div class="item">
+            <div class="category-icon">
+              <img
+                class="img-fluid"
+                src="../img/can-keo-1569402330.jpg"
+                alt="Cần kéo"
+              />
+              <h5>Cần kéo</h5>
+            </div>
+          </div>
+          <!-- Category Item 2 -->
+          <div class="item">
+            <div class="category-icon">
+              <img
+                class="img-fluid"
+                src="../img/can-noi-1569402295.jpg"
+                alt="Cần nối"
+              />
+              <h5>Cần nối</h5>
+            </div>
+          </div>
+          <!-- Category Item 3 -->
+          <div class="item">
+            <div class="category-icon">
+              <img
+                src="../img/can-siet-1452762406.png"
+                alt="Cần siết"
+                class="w-75"
+              />
+              <h5>Cần siết</h5>
+            </div>
+          </div>
+          <!-- Category Item 4 -->
+          <div class="item">
+            <div class="category-icon">
+              <img src="../img/tuyp-1452762126.jpg" alt="Tuýt" />
+              <h5>Tuýt</h5>
+            </div>
+          </div>
+          <!-- Category Item 5 -->
+          <div class="item">
+            <div class="category-icon">
+              <img src="../img/ong-dieu-1452762032.jpg" alt="Ống điếu" />
+              <h5>Ống điếu</h5>
+            </div>
+          </div>
+          <!-- Category Item 6 -->
+          <div class="item">
+            <div class="category-icon">
+              <img src="../img/de-co-khi-1452761975.jpg" alt="Đe cơ khí" />
+              <h5>Đe cơ khí</h5>
+            </div>
+          </div>
+          <!-- Category Item 7 -->
+          <div class="item">
+            <div class="category-icon">
+              <img src="../img/dung-cu-cao-1452761875.jpg" alt="Dụng cụ cảo" />
+              <h5>Dụng cụ cảo</h5>
+            </div>
+          </div>
+          <!-- Category Item 8 -->
+          <div class="item">
+            <div class="category-icon">
+              <img src="../img/e-to-1452761840.jpg" alt="Ê tô" />
+              <h5>Ê tô</h5>
+            </div>
+          </div>
+          <!-- Category Item 9 -->
+          <div class="item">
+            <div class="category-icon">
+              <img src="../img/mo-let-1452761752.jpg" alt="Mỏ lếch" />
+              <h5>Mỏ lếch</h5>
+            </div>
+          </div>
+          <!-- Category Item 10 -->
+          <div class="item">
+            <div class="category-icon">
+              <img src="../img/co-le-1452761649.jpg" alt="Cờ lê" />
+              <h5>Cờ lê</h5>
+            </div>
+          </div>
+          <!-- Category Item 11 -->
+          <div class="item">
+            <div class="category-icon">
+              <img src="../img/luc-giac-1569401940.jpg" alt="Lục giác" />
+              <h5>Lục giác</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer (Optional: Customize as needed) -->
+    <div class="footer bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h4 class="fs-5">Về chúng tôi</h4>
+            <ul class="list-menu">
+              <li class="li-menu"><a href="">Trang chủ</a></li>
+              <li class="li-menu"><a href="">Giới thiệu</a></li>
+              <li class="li-menu"><a href="">Sản phẩm</a></li>
+              <li class="li-menu"><a href="">Tin mới nhất</a></li>
+              <li class="li-menu"><a href="">Câu hỏi thường gặp</a></li>
+              <li class="li-menu"><a href="">Tuyển dụng</a></li>
+              <li class="li-menu"><a href="">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h4 class="fs-5">Chính sách bán hàng</h4>
+            <ul class="list-menu">
+              <li class="li-menu"><a href="">Trang chủ</a></li>
+              <li class="li-menu"><a href="">Giới thiệu</a></li>
+              <li class="li-menu"><a href="">Sản phẩm</a></li>
+              <li class="li-menu"><a href="">Tin mới nhất</a></li>
+              <li class="li-menu"><a href="">Câu hỏi thường gặp</a></li>
+              <li class="li-menu"><a href="">Tuyển dụng</a></li>
+              <li class="li-menu"><a href="">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h4 class="fs-5">Hỗ trợ khách hàng</h4>
+            <ul class="list-menu">
+              <li class="li-menu"><a href="">Trang chủ</a></li>
+              <li class="li-menu"><a href="">Giới thiệu</a></li>
+              <li class="li-menu"><a href="">Sản phẩm</a></li>
+              <li class="li-menu"><a href="">Tin mới nhất</a></li>
+              <li class="li-menu"><a href="">Câu hỏi thường gặp</a></li>
+              <li class="li-menu"><a href="">Tuyển dụng</a></li>
+              <li class="li-menu"><a href="">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <p class="m-0">Bài tập lớn môn hệ thống công nghệ web IUH 2025</p>
+            <p class="m-0">
+              Đề tài: Website giới thiệu, bán máy cơ khí trực tuyến . Thành viên
+              thực hiện:
+            </p>
+            <p class="m-0">Đặng Thế Vỹ - 23668831</p>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Dụng cụ cơ khí Mechanics Zyx</h5>
+            <p class="m-0">Địa chỉ: Gò vấp - TP Hồ Chí Minh</p>
+            <p class="m-0">Điện thoại: 1800 6379</p>
+            <p class="m-0">Email: mechanicsZyx@gmail.com</p>
+          </div>
+
+          <div class="col-md-6">
+            <h5>Đăng ký nhận thông tin</h5>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="@example.com"
+                aria-label="@example.com"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2">Đăng ký</span>
+            </div>
+            <div>
+              <span class="box50 border border-danger mr-3"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></span>
+
+              <span class="box50 border border-danger mr-3"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></span>
+
+              <span class="box50 border border-danger mr-3"
+                ><i class="fa-brands fa-google"></i
+              ></span>
+
+              <span class="box50 border border-danger text-danger mr-3"
+                ><i class="fa-brands fa-youtube"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col">
+            @ Bản quyền thuộc về mechanicsZyx.vn. All right reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Script -->
+  <script src="../js/js-html/home.js"></script>
+  <script src="../js/js-html/productCatelog.js"></script>
+</html>
